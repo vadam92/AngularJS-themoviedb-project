@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<div class="container">
+  <div class="jumbotron">
+      <h1>{{title}}</h1>
+  </div>
+</div>
+
+<div class="input-group col-lg-6 container">
+  <input type="text" class="form-control" placeholder="Search" #inputText/>
+  <span class="input-group-btn">
+      <button class="btn btn-secondary btn-info" type="button" (click)="onSearch(inputText.value)" >Search</button>
+    </span>
+</div>
+
+
+
+<router-outlet></router-outlet>

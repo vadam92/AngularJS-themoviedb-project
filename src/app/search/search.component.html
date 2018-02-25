@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<table class="container mt-5 w-25">
+        <tr *ngFor='let result of results'>
+          <td><img src="https://image.tmdb.org/t/p/w500/{{result.poster_path}}" width="150" height="180"></td>
+          <td class="text-justify"><a class="display-5 text-dark font-weight-bold" >{{result.title}}</a><br/>{{result.release_date}}</td>
+          <td class="px-2"><button class="btn btn-success" (click)="onClick(result.id,result.title,result.overview,result.release_date,result.poster_path,result.vote_average,result.vote_count,result.popularity,result.original_language)">Details</button></td>
+        </tr>
+      </table>

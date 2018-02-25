@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<div  class="container mt-5">
+                <div align="center">
+                
+                    <img src="https://image.tmdb.org/t/p/w500/{{picture}}" width="150" height="180">
+                    
+                    <pre><strong>Title: </strong>{{title}}</pre>
+                    <pre><strong>Date:</strong> {{date}}</pre>
+                    <pre><strong>Language:</strong> {{language}}</pre>
+                    <pre><strong>Popularity:</strong> {{popularity}}</pre>
+                    <pre><strong>Vote average:</strong> {{vote_average}}</pre>
+                    <pre><strong>Vote count:</strong> {{vote_count}}</pre>
+                    <pre><strong>Description:</strong></pre>
+                    <div class="w-75"> {{overview}}</div>
+                </div>
+</div>
+<div class="footer-copyright py-3 text-center">
+        <div class="container-fluid">
+                <button class="btn btn-success" (click)="goBack()">Back To Movies</button>
+
+        </div>
+    </div>
+
